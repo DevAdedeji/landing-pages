@@ -1,3 +1,18 @@
+<script setup>
+import { onMounted } from "vue";
+import { gsap } from "gsap";
+
+onMounted(() => {
+  gsap.to(".explore-btn", {
+    y: 10,
+    duration: 0.5,
+    ease: "power2.inOut",
+    yoyo: true,
+    repeat: -1,
+  });
+});
+</script>
+
 <template>
   <div
     class="w-[60%] mx-auto flex flex-col items-center justify-center gap-6 py-20"
@@ -13,7 +28,7 @@
     </p>
     <router-link
       to="#"
-      class="text-white bg-black rounded-3xl py-3 px-4 self-center"
+      class="text-white bg-black rounded-3xl py-3 px-4 self-center explore-btn"
       >Explore automation</router-link
     >
   </div>

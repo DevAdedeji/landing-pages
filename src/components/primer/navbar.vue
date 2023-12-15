@@ -4,7 +4,7 @@
   >
     <div class="w-[90%] mx-auto flex items-center justify-between">
       <router-link to="/primer">
-        <h1 class="font-semibold text-3xl">Primer</h1>
+        <img src="@/assets/primer/logo.png" />
       </router-link>
       <ul class="flex items-center gap-6">
         <li>

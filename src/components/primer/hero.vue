@@ -33,6 +33,15 @@ onMounted(() => {
     opacity: 0,
     y: 800,
     ease: "Expo.easeInOut",
+    onComplete: function () {
+      gsap.to(".hero-action-button", {
+        y: 10,
+        duration: 0.5,
+        ease: "power2.inOut",
+        yoyo: true,
+        repeat: -1,
+      });
+    },
   });
   gsap.from(".hero-icon", {
     opacity: 0,
